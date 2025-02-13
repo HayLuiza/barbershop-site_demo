@@ -1,0 +1,477 @@
+:root {
+    --color-primary: #917758;
+    --color-secondary: #3c2915;
+    --color-primary-light: #f5eee6;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    width: 1170px;
+    margin: 0 auto;
+}
+
+/*****************************************
+*                 HOME
+******************************************/
+
+.home {
+    background-size: cover;
+    background-image: url(../images/bg-home.jpg);
+    background-attachment: fixed;
+    height: 100vh;
+    position: relative;
+}
+
+.home .header {
+    padding: 30px 0;
+}
+
+.home .header .nav {
+    display: flex;
+    justify-content: center;
+}
+
+.home .header .nav ul {
+    display: flex;
+    list-style: none;
+}
+
+.home .header .nav ul li {
+    display: flex;
+    align-items: center;
+    width: 150px;
+    justify-content: center;
+}
+
+.home .header .nav ul li a {
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 12px;
+    padding: 20px;
+}
+
+.home .header .nav ul li a:hover {
+    border-bottom: 1px solid var(--color-primary);
+    color: var(--color-primary);
+
+}
+
+.home .header .nav ul li .logo {
+    margin: 0 30px;
+}
+
+/*****************************************
+*             HOME - BANNER
+******************************************/
+
+.home .banner {
+color: white;
+text-align: center;
+position: absolute;
+top: 50%;
+left: 50%;
+width: 770;
+margin-left: -385px;
+margin-top: -75px;
+}
+
+.home .banner span {
+    display: block;
+}
+
+.home .banner .slogan1 {
+    text-transform: uppercase ;
+    color: var(--color-primary);
+    letter-spacing: 4px;
+    font-size: 14px;
+}
+
+.home .banner h1 {
+   font-size: 120px;
+}
+
+.home .banner .slogan2 {
+    margin-bottom: 15px;
+}
+
+/**********************************
+*              ABOUT
+***********************************/
+
+.about {
+    background-color: var(--color-primary);
+}
+
+.about .container {
+    display: flex;
+}
+
+.about .timing {
+    position: relative;
+    top: -50px;
+    width: 33%;
+    padding: 20px;
+    background-image: url(../images/brush-big.jpg);    
+}
+
+.about .timing .overlay {
+    background: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.about .timing .overlay .icon-cut {
+    width: 50px;
+}
+
+.about .timing h3 {
+    color: var(--color-primary);
+    text-transform: uppercase;
+    border-bottom: 1px solid var(--color-primary);
+    width: fit-content;
+    margin: 0 auto 30px auto;
+    font-size: 30px;
+    
+}
+
+.about .timing .overlay .text {
+    margin: 10px 0;
+}
+
+.about .timing .overlay .text:after {
+    content: '•';
+    color: white;
+    display: block;
+    font-size: 25px;
+    margin-top: 10px;
+}
+
+.about .timing .overlay .text:last-of-type:after {
+    content: '|';
+    color: white;
+    display: block;
+    font-size: 25px;
+    margin-top: 10px;
+}
+
+.about .timing .text h4 {
+    color: gray;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.about .timing span {
+    font-size: 15px;
+}
+
+.about .experience {
+    width: 66%;
+    
+    color: white;
+    margin-left: 7%;
+    margin-top: 100px;
+
+}
+
+.about .experience h2 {
+    font-weight: 400;
+    font-size: 40px;
+}
+
+.about .experience h2:after {
+    display: block;
+    content: '';
+    width: 100px;
+    height: 3px;
+    background-color: #a38f78;
+    margin: 20px 0;
+}
+
+.about .experience .text {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about .experience .text p {
+    margin-bottom: 20px;
+    font-weight: 100;
+    font-size: 17px;
+}
+
+
+/**********************************
+*            SERVICES
+***********************************/
+
+.services {
+    background-color: var(--color-primary-light);
+    padding: 100px 0;
+    text-align: center;
+}
+
+.services .container {
+    display: block;
+}
+
+.services .container .blocks {
+    display: flex;
+    margin-top: 50px;
+    justify-content: space-between;
+}
+
+.services h2 {
+    font-size: 50px;
+    font-weight: 400;
+    color: var(--color-secondary);
+    margin-bottom: 10px;
+}
+
+.services .container .text {
+    border: 3px solid var(--color-primary);
+    width: 33%;
+    margin: 30px;
+    padding: 50px 40px;
+    position: relative
+    
+}
+
+.services .container .text h3 {
+   margin-top: 30px ;
+   color: var(--color-secondary);
+}
+
+.services .container .text p {
+    margin-top: 20px;
+    font-size: 14px;
+    line-height: 25px;
+}
+
+/**********************************
+*            SCHEDULING
+***********************************/
+
+.scheduling {
+    background-color: var(--color-primary);
+    padding: 100px 0;
+    text-align: center;
+    background-image: url(../images/chair-ic.png);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: 300px;
+}
+
+.scheduling .container {
+    display: block;
+}
+
+.scheduling h2 {
+    color: var(--color-primary-light);
+    font-weight: 400;
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+.scheduling img {
+    margin: 0 auto;
+    display: block;
+}
+
+.scheduling form {
+    padding: 15px;
+    text-align: left;
+    margin-top: 80px;
+}
+
+.scheduling .forms {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;    
+}
+
+.scheduling form label {
+    color: var(--color-primary-light);
+    font-size: 14px;
+    display: block;
+    margin-bottom: 2px;
+}
+
+.scheduling form .forms .input-wrapper {
+    width: 100%;
+    margin-right: 50px;
+}
+
+.scheduling form .forms .input-wrapper:last-of-type {
+    margin-right: 0px;
+}
+
+.scheduling form .forms input,
+.scheduling form .forms select {
+    padding: 10px;
+    outline: none;
+    border: none;
+    width: 100%;
+    border-radius: 3px;
+}
+
+.scheduling form .mensage {
+    margin-top: 30px;
+}
+
+.scheduling form .mensage input {
+    margin-bottom: 20px;
+    padding: 40px;
+    outline: none;
+    border: none;
+    width: 100%;
+    height: 100px;
+}
+
+.scheduling form button {
+    padding: 15px 40px;
+    background-color: var(--color-secondary);
+    color: var(--color-primary-light);
+    font-size: 11px;
+    border: none;
+    font-weight: bold;
+}
+
+
+/**********************************
+*             GALERY
+***********************************/
+
+.galery {
+    background-color: var(--color-primary-light);
+    text-align: center;
+    padding: 100px 0;
+}
+
+.galery .container {
+    display: block;
+}
+
+.galery h2 {
+    color: var(--color-secondary);
+    font-weight: 400;
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+.galery img {
+    margin: 0 auto;
+    display: block;
+}
+
+.galery .images {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 860px;
+    height: 100vh;
+    margin: 50px auto;
+}
+
+.galery .images div {
+    border:10px solid var(--color-primary);
+    width: 33%;
+    margin: 6px;
+   
+}
+
+.galery .images div img {
+    width: 100%;
+}
+
+
+
+/**********************************
+*           LOCATION
+***********************************/
+
+.location {
+    background-image: url(../images/bg-location.jpg);
+    padding: 100px 0;
+    justify-content: center;
+    background-size: cover;
+    
+}
+
+.location .container {
+    display: block;
+    
+}
+
+.location .options {
+    display: flex;
+    background-color: #191919;
+    justify-content: center;
+    padding: 40px;
+    width: 100%;
+
+}
+
+.location .options .info {
+    display: flex;
+    align-items: center;
+    width: 25%;  
+}
+
+.location .info .icon {
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+    border: 1px solid var(--color-primary);
+    padding: 10px;
+    width: 50px;
+    height: 50px;
+    justify-content: center;
+    border-radius: 100%;
+    
+}
+
+.location .options .info .text {
+    display: block;
+    font-size: 12px;
+}
+
+.location .options .info .text span:first-child {
+    color: silver;
+}
+
+.location .options .info .text span:last-child {
+    color: white;
+}
+
+.location .map {
+    width: 100%;    
+}
+
+.location .map iframe {
+    width: 100%;
+}
+
+/**********************************
+*             FOOTER
+***********************************/
+
+
+footer {
+    background-color: #191919;
+    text-align: center;
+    font-size: 12px;
+    color: white;
+    padding: 40px;
+}
